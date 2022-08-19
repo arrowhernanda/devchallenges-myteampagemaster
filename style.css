@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    width: auto;
+    height: 95vh;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 200px;
+    margin: 10px 25px;
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+.description{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: smaller;
+    width: 300px;
+    margin: 7.5px auto;
+}
+img{
+    height: 250px;
+    margin: 0;
+    padding: 0;
+    border-radius: 5px;
+}
+.job-position{
+    font-family: 'PT Serif', serif;
+    font-size: smaller;
+    writing-mode: vertical-lr;
+    padding: 0;
+    margin-left: 7.5px;
+}
+.name{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin: 7.5px auto;
+}
+.persona{
+    display: flex;
+    margin: 0 auto;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.mid{
+    margin-top: 100px;
+}
+.content-web{
+    width: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 50px auto;
+    gap: 75px;
+}
+.content-mobile{
+    display: none;
+}
+#footer{
+    font-family: 'Montserrat',sans-serif;
+    color: gray;
+    width: 80%;
+    text-align: center;
+    margin: 20px auto;
+    padding-bottom: 20px;
+}
+
+
+@media screen and (max-width: 850px){
+    .content-web{
+        display: none;
+    }
+    .content-mobile{
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin: 50px auto;
+        justify-content: center;
+        gap: 20px;
+}
+}
+@media screen and (max-width: 700px){
+    .header{
+        flex-direction: column;
+        gap: 0;
+    }
+    
+}
+@media screen and (max-width: 600px){
+    img{
+        height: 175px;
+    }
+    .content-mobile{
+        width: 90%;
+        gap: 15px;
+    }
+}
+@media screen and (max-width: 400px) {
+    img{
+        height: 150px;
+    }
+    
+}
